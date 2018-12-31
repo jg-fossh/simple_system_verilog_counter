@@ -30,14 +30,14 @@
 // Module      : counter
 // Description : Counter with configurable size. Counter direction is TBD.
 //-----------------------------------------------------------------------------
-module counter #(parameter COUNTER_MSB=0, COUNTER_DIRECTION=0, COUNTER_THRESHOLD=0)
+module counter #(parameter COUNTER_MSB=6, COUNTER_DIRECTION=0, COUNTER_THRESHOLD=127)
   (
    // Input Signals
-   input  logic                 clk,      // System Clock
-   input  logic                 rst,      // System Reset
+   input  logic                 i_CLK,      // System Clock
+   input  logic                 i_RST,      // System Reset
    // Output Signals
-   output logic [COUNTER_MSB:0] counter,  // Count
-   output logic                 over_run  // Over Run
+   output logic [COUNTER_MSB:0] i_COUNTER,  // Count
+   output logic                 i_OVER_RUN  // Over Run
   );
 
   // Internal Signal Definitions
@@ -45,8 +45,8 @@ module counter #(parameter COUNTER_MSB=0, COUNTER_DIRECTION=0, COUNTER_THRESHOLD
   logic                 r_over_run;
 
   // Counter Process
-  always_ff @(posedge clk or posedge rst)  begin
-    if(rst)  begin
+  always_ff @(posedge i_CLK or posedge i_RST)  begin
+    if(i_RST)  begin
       // Reset Signals
       r_counter   <= 'b0;
       r_over_run  <= 1'b0;
@@ -63,7 +63,7 @@ module counter #(parameter COUNTER_MSB=0, COUNTER_DIRECTION=0, COUNTER_THRESHOLD
   end
 
   // Assign register values to output signals
-  assign counter  = r_counter;
-  assign over_run = r_over_run;
+  assign i_COUNTER  = r_counter;
+  assign i_OVER_RUN = r_over_run;
 
 endmodule

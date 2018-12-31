@@ -1,0 +1,72 @@
+#--  Synopsys, Inc.
+#--  Version L-2016.09L+ice40
+#--  Project file Z:\home\jota\Documents\RTL\Counter\counter_iCEcube2\counter_iCEcube2\counter_iCEcube2_Implmnt\run_options.txt
+#--  Written on Sun Dec 30 20:02:24 2018
+
+
+#project files
+add_file -verilog -vlog_std sysv "../counter.sv"
+
+
+
+#implementation: "counter_iCEcube2_Implmnt"
+impl -add counter_iCEcube2_Implmnt -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std sysv
+set_option -project_relative_includes 1
+
+#device options
+set_option -technology SBTiCE40
+set_option -part iCE40HX8K
+set_option -package CT256
+set_option -speed_grade ""
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -top_module "counter"
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+
+# mapper_without_write_options
+set_option -frequency auto
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 1
+set_option -write_vhdl 1
+
+# Lattice iCE40
+set_option -maxfan 10000
+set_option -rw_check_on_ram 0
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 1
+set_option -update_models_cp 1
+set_option -fix_gated_and_generated_clocks 1
+set_option -run_prop_extract 1
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+set_option -looplimit 50000
+
+# Compiler Options
+set_option -beta_vfeatures 1
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "counter_iCEcube2_Implmnt/counter_iCEcube2.edf"
+impl -active "counter_iCEcube2_Implmnt"

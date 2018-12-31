@@ -1,0 +1,446 @@
+--
+-- Written by Synplicity
+-- Product Version "L-2016.09L+ice40"
+-- Program "Synplify Pro", Mapper "maplat, Build 1612R"
+-- Sun Dec 30 20:02:26 2018
+--
+
+--
+-- Written by Synplify Pro version Build 1612R
+-- Sun Dec 30 20:02:26 2018
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library work;
+use work.vcomponent_vital.all; 
+use work.std_logic_SBT.all; 
+
+entity counter is
+port(
+  i_CLK :  in std_logic;
+  i_RST :  in std_logic;
+  i_COUNTER : out std_logic_vector(6 downto 0);
+  i_OVER_RUN :  out std_logic);
+end counter;
+
+architecture beh of counter is
+  signal I_COUNTER_C : std_logic_vector(6 downto 0);
+  signal R_COUNTER_CRY : std_logic_vector(5 downto 0);
+  signal R_COUNTER_S : std_logic_vector(6 downto 0);
+  signal NN_1 : std_logic ;
+  signal NN_2 : std_logic ;
+  signal R_COUNTER7_0 : std_logic ;
+  signal I_CLK_INTERNAL : std_logic ;
+  signal I_RST_C : std_logic ;
+  signal I_RST_INTERNAL : std_logic ;
+  signal NN_3 : std_logic ;
+  signal I_COUNTER_5 : std_logic ;
+  signal I_COUNTER_6 : std_logic ;
+  signal I_COUNTER_7 : std_logic ;
+  signal I_COUNTER_8 : std_logic ;
+  signal I_COUNTER_9 : std_logic ;
+  signal I_COUNTER_10 : std_logic ;
+  signal I_OVER_RUN_C : std_logic ;
+  signal I_OVER_RUN_11 : std_logic ;
+  signal R_COUNTER7_0_I : std_logic ;
+  signal R_COUNTER7LTO6_4 : std_logic ;
+  signal I_CLK_C_G : std_logic ;
+  signal N_1 : std_logic ;
+  signal N_2 : std_logic ;
+  signal N_3 : std_logic ;
+  signal N_4 : std_logic ;
+  signal N_5 : std_logic ;
+  signal N_6 : std_logic ;
+  signal N_7 : std_logic ;
+  signal N_8 : std_logic ;
+  signal N_9 : std_logic ;
+  signal N_10 : std_logic ;
+  signal N_11 : std_logic ;
+  signal N_12 : std_logic ;
+  signal N_13 : std_logic ;
+  signal N_14 : std_logic ;
+  signal N_15 : std_logic ;
+  signal N_16 : std_logic ;
+  signal N_17 : std_logic ;
+  signal N_18 : std_logic ;
+  signal N_19 : std_logic ;
+begin
+I_CLK_IBUF_GB_IO: SB_GB_IO 
+generic map(
+  PIN_TYPE => "000001",
+  PULLUP => '0',
+  NEG_TRIGGER => '0',
+  IO_STANDARD => "SB_LVCMOS"
+)
+port map (
+  PACKAGE_PIN => I_CLK_INTERNAL,
+  LATCH_INPUT_VALUE => NN_2,
+  CLOCK_ENABLE => NN_2,
+  INPUT_CLK => NN_2,
+  OUTPUT_CLK => NN_2,
+  OUTPUT_ENABLE => NN_1,
+  D_OUT_1 => NN_2,
+  D_OUT_0 => NN_2,
+  D_IN_1 => N_1,
+  D_IN_0 => N_2,
+  GLOBAL_BUFFER_OUTPUT => I_CLK_C_G);
+\R_COUNTER_RNI44T6[0]\: SB_LUT4 
+generic map(
+  LUT_INIT => X"7FFF"
+)
+port map (
+  I0 => I_COUNTER_C(0),
+  I1 => I_COUNTER_C(1),
+  I2 => I_COUNTER_C(5),
+  I3 => R_COUNTER7LTO6_4,
+  O => R_COUNTER7_0_I);
+R_OVER_RUN_RNO: SB_LUT4 
+generic map(
+  LUT_INIT => X"8000"
+)
+port map (
+  I0 => I_COUNTER_C(0),
+  I1 => I_COUNTER_C(1),
+  I2 => I_COUNTER_C(5),
+  I3 => R_COUNTER7LTO6_4,
+  O => R_COUNTER7_0);
+\R_COUNTER_RNIJEU3[6]\: SB_LUT4 
+generic map(
+  LUT_INIT => X"8000"
+)
+port map (
+  I0 => I_COUNTER_C(2),
+  I1 => I_COUNTER_C(3),
+  I2 => I_COUNTER_C(4),
+  I3 => I_COUNTER_C(6),
+  O => R_COUNTER7LTO6_4);
+\R_COUNTER_RNO[5]\: SB_LUT4 
+generic map(
+  LUT_INIT => X"9966"
+)
+port map (
+  I0 => NN_2,
+  I1 => I_COUNTER_C(5),
+  I2 => NN_2,
+  I3 => R_COUNTER_CRY(4),
+  O => R_COUNTER_S(5));
+\R_COUNTER_RNO[4]\: SB_LUT4 
+generic map(
+  LUT_INIT => X"9966"
+)
+port map (
+  I0 => NN_2,
+  I1 => I_COUNTER_C(4),
+  I2 => NN_2,
+  I3 => R_COUNTER_CRY(3),
+  O => R_COUNTER_S(4));
+\R_COUNTER_RNO[3]\: SB_LUT4 
+generic map(
+  LUT_INIT => X"9966"
+)
+port map (
+  I0 => NN_2,
+  I1 => I_COUNTER_C(3),
+  I2 => NN_2,
+  I3 => R_COUNTER_CRY(2),
+  O => R_COUNTER_S(3));
+\R_COUNTER_RNO[2]\: SB_LUT4 
+generic map(
+  LUT_INIT => X"9966"
+)
+port map (
+  I0 => NN_2,
+  I1 => I_COUNTER_C(2),
+  I2 => NN_2,
+  I3 => R_COUNTER_CRY(1),
+  O => R_COUNTER_S(2));
+\R_COUNTER_RNO[1]\: SB_LUT4 
+generic map(
+  LUT_INIT => X"9966"
+)
+port map (
+  I0 => NN_2,
+  I1 => I_COUNTER_C(1),
+  I2 => NN_2,
+  I3 => R_COUNTER_CRY(0),
+  O => R_COUNTER_S(1));
+\R_COUNTER_RNO[0]\: SB_LUT4 
+generic map(
+  LUT_INIT => X"9966"
+)
+port map (
+  I0 => NN_2,
+  I1 => I_COUNTER_C(0),
+  I2 => NN_2,
+  I3 => NN_1,
+  O => R_COUNTER_S(0));
+\R_COUNTER_RNO[6]\: SB_LUT4 
+generic map(
+  LUT_INIT => X"55AA"
+)
+port map (
+  I0 => I_COUNTER_C(6),
+  I1 => NN_2,
+  I2 => NN_2,
+  I3 => R_COUNTER_CRY(5),
+  O => R_COUNTER_S(6));
+I_RST_IBUF: SB_IO 
+generic map(
+  PIN_TYPE => "000001",
+  PULLUP => '0',
+  NEG_TRIGGER => '0',
+  IO_STANDARD => "SB_LVCMOS"
+)
+port map (
+  PACKAGE_PIN => I_RST_INTERNAL,
+  LATCH_INPUT_VALUE => NN_2,
+  CLOCK_ENABLE => NN_2,
+  INPUT_CLK => NN_2,
+  OUTPUT_CLK => NN_2,
+  OUTPUT_ENABLE => NN_1,
+  D_OUT_1 => NN_2,
+  D_OUT_0 => NN_2,
+  D_IN_1 => N_3,
+  D_IN_0 => I_RST_C);
+\I_COUNTER_OBUF[0]\: SB_IO 
+generic map(
+  PIN_TYPE => "011001",
+  PULLUP => '0',
+  NEG_TRIGGER => '0',
+  IO_STANDARD => "SB_LVCMOS"
+)
+port map (
+  PACKAGE_PIN => NN_3,
+  LATCH_INPUT_VALUE => NN_2,
+  CLOCK_ENABLE => NN_2,
+  INPUT_CLK => NN_2,
+  OUTPUT_CLK => NN_2,
+  OUTPUT_ENABLE => NN_1,
+  D_OUT_1 => NN_2,
+  D_OUT_0 => I_COUNTER_C(0),
+  D_IN_1 => N_4,
+  D_IN_0 => N_5);
+\I_COUNTER_OBUF[1]\: SB_IO 
+generic map(
+  PIN_TYPE => "011001",
+  PULLUP => '0',
+  NEG_TRIGGER => '0',
+  IO_STANDARD => "SB_LVCMOS"
+)
+port map (
+  PACKAGE_PIN => I_COUNTER_5,
+  LATCH_INPUT_VALUE => NN_2,
+  CLOCK_ENABLE => NN_2,
+  INPUT_CLK => NN_2,
+  OUTPUT_CLK => NN_2,
+  OUTPUT_ENABLE => NN_1,
+  D_OUT_1 => NN_2,
+  D_OUT_0 => I_COUNTER_C(1),
+  D_IN_1 => N_6,
+  D_IN_0 => N_7);
+\I_COUNTER_OBUF[2]\: SB_IO 
+generic map(
+  PIN_TYPE => "011001",
+  PULLUP => '0',
+  NEG_TRIGGER => '0',
+  IO_STANDARD => "SB_LVCMOS"
+)
+port map (
+  PACKAGE_PIN => I_COUNTER_6,
+  LATCH_INPUT_VALUE => NN_2,
+  CLOCK_ENABLE => NN_2,
+  INPUT_CLK => NN_2,
+  OUTPUT_CLK => NN_2,
+  OUTPUT_ENABLE => NN_1,
+  D_OUT_1 => NN_2,
+  D_OUT_0 => I_COUNTER_C(2),
+  D_IN_1 => N_8,
+  D_IN_0 => N_9);
+\I_COUNTER_OBUF[3]\: SB_IO 
+generic map(
+  PIN_TYPE => "011001",
+  PULLUP => '0',
+  NEG_TRIGGER => '0',
+  IO_STANDARD => "SB_LVCMOS"
+)
+port map (
+  PACKAGE_PIN => I_COUNTER_7,
+  LATCH_INPUT_VALUE => NN_2,
+  CLOCK_ENABLE => NN_2,
+  INPUT_CLK => NN_2,
+  OUTPUT_CLK => NN_2,
+  OUTPUT_ENABLE => NN_1,
+  D_OUT_1 => NN_2,
+  D_OUT_0 => I_COUNTER_C(3),
+  D_IN_1 => N_10,
+  D_IN_0 => N_11);
+\I_COUNTER_OBUF[4]\: SB_IO 
+generic map(
+  PIN_TYPE => "011001",
+  PULLUP => '0',
+  NEG_TRIGGER => '0',
+  IO_STANDARD => "SB_LVCMOS"
+)
+port map (
+  PACKAGE_PIN => I_COUNTER_8,
+  LATCH_INPUT_VALUE => NN_2,
+  CLOCK_ENABLE => NN_2,
+  INPUT_CLK => NN_2,
+  OUTPUT_CLK => NN_2,
+  OUTPUT_ENABLE => NN_1,
+  D_OUT_1 => NN_2,
+  D_OUT_0 => I_COUNTER_C(4),
+  D_IN_1 => N_12,
+  D_IN_0 => N_13);
+\I_COUNTER_OBUF[5]\: SB_IO 
+generic map(
+  PIN_TYPE => "011001",
+  PULLUP => '0',
+  NEG_TRIGGER => '0',
+  IO_STANDARD => "SB_LVCMOS"
+)
+port map (
+  PACKAGE_PIN => I_COUNTER_9,
+  LATCH_INPUT_VALUE => NN_2,
+  CLOCK_ENABLE => NN_2,
+  INPUT_CLK => NN_2,
+  OUTPUT_CLK => NN_2,
+  OUTPUT_ENABLE => NN_1,
+  D_OUT_1 => NN_2,
+  D_OUT_0 => I_COUNTER_C(5),
+  D_IN_1 => N_14,
+  D_IN_0 => N_15);
+\I_COUNTER_OBUF[6]\: SB_IO 
+generic map(
+  PIN_TYPE => "011001",
+  PULLUP => '0',
+  NEG_TRIGGER => '0',
+  IO_STANDARD => "SB_LVCMOS"
+)
+port map (
+  PACKAGE_PIN => I_COUNTER_10,
+  LATCH_INPUT_VALUE => NN_2,
+  CLOCK_ENABLE => NN_2,
+  INPUT_CLK => NN_2,
+  OUTPUT_CLK => NN_2,
+  OUTPUT_ENABLE => NN_1,
+  D_OUT_1 => NN_2,
+  D_OUT_0 => I_COUNTER_C(6),
+  D_IN_1 => N_16,
+  D_IN_0 => N_17);
+I_OVER_RUN_OBUF: SB_IO 
+generic map(
+  PIN_TYPE => "011001",
+  PULLUP => '0',
+  NEG_TRIGGER => '0',
+  IO_STANDARD => "SB_LVCMOS"
+)
+port map (
+  PACKAGE_PIN => I_OVER_RUN_11,
+  LATCH_INPUT_VALUE => NN_2,
+  CLOCK_ENABLE => NN_2,
+  INPUT_CLK => NN_2,
+  OUTPUT_CLK => NN_2,
+  OUTPUT_ENABLE => NN_1,
+  D_OUT_1 => NN_2,
+  D_OUT_0 => I_OVER_RUN_C,
+  D_IN_1 => N_18,
+  D_IN_0 => N_19);
+R_OVER_RUN: SB_DFFR port map (
+    Q => I_OVER_RUN_C,
+    D => R_COUNTER7_0,
+    C => I_CLK_C_G,
+    R => I_RST_C);
+\R_COUNTER[0]\: SB_DFFER port map (
+    Q => I_COUNTER_C(0),
+    D => R_COUNTER_S(0),
+    C => I_CLK_C_G,
+    R => I_RST_C,
+    E => R_COUNTER7_0_I);
+\R_COUNTER[1]\: SB_DFFER port map (
+    Q => I_COUNTER_C(1),
+    D => R_COUNTER_S(1),
+    C => I_CLK_C_G,
+    R => I_RST_C,
+    E => R_COUNTER7_0_I);
+\R_COUNTER[2]\: SB_DFFER port map (
+    Q => I_COUNTER_C(2),
+    D => R_COUNTER_S(2),
+    C => I_CLK_C_G,
+    R => I_RST_C,
+    E => R_COUNTER7_0_I);
+\R_COUNTER[3]\: SB_DFFER port map (
+    Q => I_COUNTER_C(3),
+    D => R_COUNTER_S(3),
+    C => I_CLK_C_G,
+    R => I_RST_C,
+    E => R_COUNTER7_0_I);
+\R_COUNTER[4]\: SB_DFFER port map (
+    Q => I_COUNTER_C(4),
+    D => R_COUNTER_S(4),
+    C => I_CLK_C_G,
+    R => I_RST_C,
+    E => R_COUNTER7_0_I);
+\R_COUNTER[5]\: SB_DFFER port map (
+    Q => I_COUNTER_C(5),
+    D => R_COUNTER_S(5),
+    C => I_CLK_C_G,
+    R => I_RST_C,
+    E => R_COUNTER7_0_I);
+\R_COUNTER[6]\: SB_DFFER port map (
+    Q => I_COUNTER_C(6),
+    D => R_COUNTER_S(6),
+    C => I_CLK_C_G,
+    R => I_RST_C,
+    E => R_COUNTER7_0_I);
+\R_COUNTER_CRY_C[0]\: SB_CARRY port map (
+    CO => R_COUNTER_CRY(0),
+    I0 => I_COUNTER_C(0),
+    I1 => NN_2,
+    CI => NN_1);
+\R_COUNTER_CRY_C[1]\: SB_CARRY port map (
+    CO => R_COUNTER_CRY(1),
+    I0 => I_COUNTER_C(1),
+    I1 => NN_2,
+    CI => R_COUNTER_CRY(0));
+\R_COUNTER_CRY_C[2]\: SB_CARRY port map (
+    CO => R_COUNTER_CRY(2),
+    I0 => I_COUNTER_C(2),
+    I1 => NN_2,
+    CI => R_COUNTER_CRY(1));
+\R_COUNTER_CRY_C[3]\: SB_CARRY port map (
+    CO => R_COUNTER_CRY(3),
+    I0 => I_COUNTER_C(3),
+    I1 => NN_2,
+    CI => R_COUNTER_CRY(2));
+\R_COUNTER_CRY_C[4]\: SB_CARRY port map (
+    CO => R_COUNTER_CRY(4),
+    I0 => I_COUNTER_C(4),
+    I1 => NN_2,
+    CI => R_COUNTER_CRY(3));
+\R_COUNTER_CRY_C[5]\: SB_CARRY port map (
+    CO => R_COUNTER_CRY(5),
+    I0 => I_COUNTER_C(5),
+    I1 => NN_2,
+    CI => R_COUNTER_CRY(4));
+II_GND: GND port map (
+    Y => NN_2);
+II_VCC: VCC port map (
+    Y => NN_1);
+i_COUNTER(0) <= NN_3;
+i_COUNTER(1) <= I_COUNTER_5;
+i_COUNTER(2) <= I_COUNTER_6;
+i_COUNTER(3) <= I_COUNTER_7;
+i_COUNTER(4) <= I_COUNTER_8;
+i_COUNTER(5) <= I_COUNTER_9;
+i_COUNTER(6) <= I_COUNTER_10;
+i_OVER_RUN <= I_OVER_RUN_11;
+I_CLK_INTERNAL <= i_CLK;
+I_RST_INTERNAL <= i_RST;
+end beh;
+

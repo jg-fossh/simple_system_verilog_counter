@@ -1,0 +1,413 @@
+//
+// Written by Synplify Pro 
+// Product Version "L-2016.09L+ice40"
+// Program "Synplify Pro", Mapper "maplat, Build 1612R"
+// Sun Dec 30 20:02:26 2018
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\lscc\icecube2.2017.08\synpbase\lib\generic\sb_ice40.v "
+// file 1 "\c:\lscc\icecube2.2017.08\synpbase\lib\vlog\hypermods.v "
+// file 2 "\c:\lscc\icecube2.2017.08\synpbase\lib\vlog\umr_capim.v "
+// file 3 "\c:\lscc\icecube2.2017.08\synpbase\lib\vlog\scemi_objects.v "
+// file 4 "\c:\lscc\icecube2.2017.08\synpbase\lib\vlog\scemi_pipes.svh "
+// file 5 "\z:\home\jota\documents\rtl\counter\counter_icecube2\counter.sv "
+// file 6 "\c:\lscc\icecube2.2017.08\synpbase\lib\nlconst.dat "
+
+`timescale 100 ps/100 ps
+module counter (
+  i_CLK,
+  i_RST,
+  i_COUNTER,
+  i_OVER_RUN
+)
+;
+
+/*  Synopsys
+.origName=counter
+.langParams="COUNTER_MSB COUNTER_DIRECTION COUNTER_THRESHOLD"
+COUNTER_MSB=6
+COUNTER_DIRECTION=0
+COUNTER_THRESHOLD=127
+ */
+input i_CLK ;
+input i_RST ;
+output [6:0] i_COUNTER ;
+output i_OVER_RUN ;
+wire i_CLK ;
+wire i_RST ;
+wire i_OVER_RUN ;
+wire [6:0] i_COUNTER_c;
+wire [5:0] r_counter_cry;
+wire [6:0] r_counter_s;
+wire VCC ;
+wire GND ;
+wire r_counter7_0 ;
+wire i_RST_c ;
+wire i_OVER_RUN_c ;
+wire r_counter7_0_i ;
+wire r_counter7lto6_4 ;
+wire i_CLK_c_g ;
+wire N_1 ;
+wire N_2 ;
+wire N_3 ;
+wire N_4 ;
+wire N_5 ;
+wire N_6 ;
+wire N_7 ;
+wire N_8 ;
+wire N_9 ;
+wire N_10 ;
+wire N_11 ;
+wire N_12 ;
+wire N_13 ;
+wire N_14 ;
+wire N_15 ;
+wire N_16 ;
+wire N_17 ;
+wire N_18 ;
+wire N_19 ;
+// @5:36
+  SB_GB_IO i_CLK_ibuf_gb_io (
+	.PACKAGE_PIN(i_CLK),
+	.LATCH_INPUT_VALUE(GND),
+	.CLOCK_ENABLE(GND),
+	.INPUT_CLK(GND),
+	.OUTPUT_CLK(GND),
+	.OUTPUT_ENABLE(VCC),
+	.D_OUT_1(GND),
+	.D_OUT_0(GND),
+	.D_IN_1(N_1),
+	.D_IN_0(N_2),
+	.GLOBAL_BUFFER_OUTPUT(i_CLK_c_g)
+);
+defparam i_CLK_ibuf_gb_io.PIN_TYPE=6'b000001;
+defparam i_CLK_ibuf_gb_io.NEG_TRIGGER=1'b0;
+  SB_LUT4 \r_counter_RNI44T6[0]  (
+	.I0(i_COUNTER_c[0]),
+	.I1(i_COUNTER_c[1]),
+	.I2(i_COUNTER_c[5]),
+	.I3(r_counter7lto6_4),
+	.O(r_counter7_0_i)
+);
+defparam \r_counter_RNI44T6[0] .LUT_INIT=16'h7FFF;
+  SB_LUT4 r_over_run_RNO (
+	.I0(i_COUNTER_c[0]),
+	.I1(i_COUNTER_c[1]),
+	.I2(i_COUNTER_c[5]),
+	.I3(r_counter7lto6_4),
+	.O(r_counter7_0)
+);
+defparam r_over_run_RNO.LUT_INIT=16'h8000;
+  SB_LUT4 \r_counter_RNIJEU3[6]  (
+	.I0(i_COUNTER_c[2]),
+	.I1(i_COUNTER_c[3]),
+	.I2(i_COUNTER_c[4]),
+	.I3(i_COUNTER_c[6]),
+	.O(r_counter7lto6_4)
+);
+defparam \r_counter_RNIJEU3[6] .LUT_INIT=16'h8000;
+  SB_LUT4 \r_counter_RNO[5]  (
+	.I0(GND),
+	.I1(i_COUNTER_c[5]),
+	.I2(GND),
+	.I3(r_counter_cry[4]),
+	.O(r_counter_s[5])
+);
+defparam \r_counter_RNO[5] .LUT_INIT=16'h9966;
+  SB_LUT4 \r_counter_RNO[4]  (
+	.I0(GND),
+	.I1(i_COUNTER_c[4]),
+	.I2(GND),
+	.I3(r_counter_cry[3]),
+	.O(r_counter_s[4])
+);
+defparam \r_counter_RNO[4] .LUT_INIT=16'h9966;
+  SB_LUT4 \r_counter_RNO[3]  (
+	.I0(GND),
+	.I1(i_COUNTER_c[3]),
+	.I2(GND),
+	.I3(r_counter_cry[2]),
+	.O(r_counter_s[3])
+);
+defparam \r_counter_RNO[3] .LUT_INIT=16'h9966;
+  SB_LUT4 \r_counter_RNO[2]  (
+	.I0(GND),
+	.I1(i_COUNTER_c[2]),
+	.I2(GND),
+	.I3(r_counter_cry[1]),
+	.O(r_counter_s[2])
+);
+defparam \r_counter_RNO[2] .LUT_INIT=16'h9966;
+  SB_LUT4 \r_counter_RNO[1]  (
+	.I0(GND),
+	.I1(i_COUNTER_c[1]),
+	.I2(GND),
+	.I3(r_counter_cry[0]),
+	.O(r_counter_s[1])
+);
+defparam \r_counter_RNO[1] .LUT_INIT=16'h9966;
+  SB_LUT4 \r_counter_RNO[0]  (
+	.I0(GND),
+	.I1(i_COUNTER_c[0]),
+	.I2(GND),
+	.I3(VCC),
+	.O(r_counter_s[0])
+);
+defparam \r_counter_RNO[0] .LUT_INIT=16'h9966;
+  SB_LUT4 \r_counter_RNO[6]  (
+	.I0(i_COUNTER_c[6]),
+	.I1(GND),
+	.I2(GND),
+	.I3(r_counter_cry[5]),
+	.O(r_counter_s[6])
+);
+defparam \r_counter_RNO[6] .LUT_INIT=16'h55AA;
+// @5:37
+  SB_IO i_RST_ibuf (
+	.PACKAGE_PIN(i_RST),
+	.LATCH_INPUT_VALUE(GND),
+	.CLOCK_ENABLE(GND),
+	.INPUT_CLK(GND),
+	.OUTPUT_CLK(GND),
+	.OUTPUT_ENABLE(VCC),
+	.D_OUT_1(GND),
+	.D_OUT_0(GND),
+	.D_IN_1(N_3),
+	.D_IN_0(i_RST_c)
+);
+defparam i_RST_ibuf.PIN_TYPE=6'b000001;
+defparam i_RST_ibuf.NEG_TRIGGER=1'b0;
+// @5:39
+  SB_IO \i_COUNTER_obuf[0]  (
+	.PACKAGE_PIN(i_COUNTER[0]),
+	.LATCH_INPUT_VALUE(GND),
+	.CLOCK_ENABLE(GND),
+	.INPUT_CLK(GND),
+	.OUTPUT_CLK(GND),
+	.OUTPUT_ENABLE(VCC),
+	.D_OUT_1(GND),
+	.D_OUT_0(i_COUNTER_c[0]),
+	.D_IN_1(N_4),
+	.D_IN_0(N_5)
+);
+defparam \i_COUNTER_obuf[0] .PIN_TYPE=6'b011001;
+defparam \i_COUNTER_obuf[0] .NEG_TRIGGER=1'b0;
+// @5:39
+  SB_IO \i_COUNTER_obuf[1]  (
+	.PACKAGE_PIN(i_COUNTER[1]),
+	.LATCH_INPUT_VALUE(GND),
+	.CLOCK_ENABLE(GND),
+	.INPUT_CLK(GND),
+	.OUTPUT_CLK(GND),
+	.OUTPUT_ENABLE(VCC),
+	.D_OUT_1(GND),
+	.D_OUT_0(i_COUNTER_c[1]),
+	.D_IN_1(N_6),
+	.D_IN_0(N_7)
+);
+defparam \i_COUNTER_obuf[1] .PIN_TYPE=6'b011001;
+defparam \i_COUNTER_obuf[1] .NEG_TRIGGER=1'b0;
+// @5:39
+  SB_IO \i_COUNTER_obuf[2]  (
+	.PACKAGE_PIN(i_COUNTER[2]),
+	.LATCH_INPUT_VALUE(GND),
+	.CLOCK_ENABLE(GND),
+	.INPUT_CLK(GND),
+	.OUTPUT_CLK(GND),
+	.OUTPUT_ENABLE(VCC),
+	.D_OUT_1(GND),
+	.D_OUT_0(i_COUNTER_c[2]),
+	.D_IN_1(N_8),
+	.D_IN_0(N_9)
+);
+defparam \i_COUNTER_obuf[2] .PIN_TYPE=6'b011001;
+defparam \i_COUNTER_obuf[2] .NEG_TRIGGER=1'b0;
+// @5:39
+  SB_IO \i_COUNTER_obuf[3]  (
+	.PACKAGE_PIN(i_COUNTER[3]),
+	.LATCH_INPUT_VALUE(GND),
+	.CLOCK_ENABLE(GND),
+	.INPUT_CLK(GND),
+	.OUTPUT_CLK(GND),
+	.OUTPUT_ENABLE(VCC),
+	.D_OUT_1(GND),
+	.D_OUT_0(i_COUNTER_c[3]),
+	.D_IN_1(N_10),
+	.D_IN_0(N_11)
+);
+defparam \i_COUNTER_obuf[3] .PIN_TYPE=6'b011001;
+defparam \i_COUNTER_obuf[3] .NEG_TRIGGER=1'b0;
+// @5:39
+  SB_IO \i_COUNTER_obuf[4]  (
+	.PACKAGE_PIN(i_COUNTER[4]),
+	.LATCH_INPUT_VALUE(GND),
+	.CLOCK_ENABLE(GND),
+	.INPUT_CLK(GND),
+	.OUTPUT_CLK(GND),
+	.OUTPUT_ENABLE(VCC),
+	.D_OUT_1(GND),
+	.D_OUT_0(i_COUNTER_c[4]),
+	.D_IN_1(N_12),
+	.D_IN_0(N_13)
+);
+defparam \i_COUNTER_obuf[4] .PIN_TYPE=6'b011001;
+defparam \i_COUNTER_obuf[4] .NEG_TRIGGER=1'b0;
+// @5:39
+  SB_IO \i_COUNTER_obuf[5]  (
+	.PACKAGE_PIN(i_COUNTER[5]),
+	.LATCH_INPUT_VALUE(GND),
+	.CLOCK_ENABLE(GND),
+	.INPUT_CLK(GND),
+	.OUTPUT_CLK(GND),
+	.OUTPUT_ENABLE(VCC),
+	.D_OUT_1(GND),
+	.D_OUT_0(i_COUNTER_c[5]),
+	.D_IN_1(N_14),
+	.D_IN_0(N_15)
+);
+defparam \i_COUNTER_obuf[5] .PIN_TYPE=6'b011001;
+defparam \i_COUNTER_obuf[5] .NEG_TRIGGER=1'b0;
+// @5:39
+  SB_IO \i_COUNTER_obuf[6]  (
+	.PACKAGE_PIN(i_COUNTER[6]),
+	.LATCH_INPUT_VALUE(GND),
+	.CLOCK_ENABLE(GND),
+	.INPUT_CLK(GND),
+	.OUTPUT_CLK(GND),
+	.OUTPUT_ENABLE(VCC),
+	.D_OUT_1(GND),
+	.D_OUT_0(i_COUNTER_c[6]),
+	.D_IN_1(N_16),
+	.D_IN_0(N_17)
+);
+defparam \i_COUNTER_obuf[6] .PIN_TYPE=6'b011001;
+defparam \i_COUNTER_obuf[6] .NEG_TRIGGER=1'b0;
+// @5:40
+  SB_IO i_OVER_RUN_obuf (
+	.PACKAGE_PIN(i_OVER_RUN),
+	.LATCH_INPUT_VALUE(GND),
+	.CLOCK_ENABLE(GND),
+	.INPUT_CLK(GND),
+	.OUTPUT_CLK(GND),
+	.OUTPUT_ENABLE(VCC),
+	.D_OUT_1(GND),
+	.D_OUT_0(i_OVER_RUN_c),
+	.D_IN_1(N_18),
+	.D_IN_0(N_19)
+);
+defparam i_OVER_RUN_obuf.PIN_TYPE=6'b011001;
+defparam i_OVER_RUN_obuf.NEG_TRIGGER=1'b0;
+// @5:48
+  SB_DFFR r_over_run_Z (
+	.Q(i_OVER_RUN_c),
+	.D(r_counter7_0),
+	.C(i_CLK_c_g),
+	.R(i_RST_c)
+);
+// @5:48
+  SB_DFFER \r_counter_Z[0]  (
+	.Q(i_COUNTER_c[0]),
+	.D(r_counter_s[0]),
+	.C(i_CLK_c_g),
+	.R(i_RST_c),
+	.E(r_counter7_0_i)
+);
+// @5:48
+  SB_DFFER \r_counter_Z[1]  (
+	.Q(i_COUNTER_c[1]),
+	.D(r_counter_s[1]),
+	.C(i_CLK_c_g),
+	.R(i_RST_c),
+	.E(r_counter7_0_i)
+);
+// @5:48
+  SB_DFFER \r_counter_Z[2]  (
+	.Q(i_COUNTER_c[2]),
+	.D(r_counter_s[2]),
+	.C(i_CLK_c_g),
+	.R(i_RST_c),
+	.E(r_counter7_0_i)
+);
+// @5:48
+  SB_DFFER \r_counter_Z[3]  (
+	.Q(i_COUNTER_c[3]),
+	.D(r_counter_s[3]),
+	.C(i_CLK_c_g),
+	.R(i_RST_c),
+	.E(r_counter7_0_i)
+);
+// @5:48
+  SB_DFFER \r_counter_Z[4]  (
+	.Q(i_COUNTER_c[4]),
+	.D(r_counter_s[4]),
+	.C(i_CLK_c_g),
+	.R(i_RST_c),
+	.E(r_counter7_0_i)
+);
+// @5:48
+  SB_DFFER \r_counter_Z[5]  (
+	.Q(i_COUNTER_c[5]),
+	.D(r_counter_s[5]),
+	.C(i_CLK_c_g),
+	.R(i_RST_c),
+	.E(r_counter7_0_i)
+);
+// @5:48
+  SB_DFFER \r_counter_Z[6]  (
+	.Q(i_COUNTER_c[6]),
+	.D(r_counter_s[6]),
+	.C(i_CLK_c_g),
+	.R(i_RST_c),
+	.E(r_counter7_0_i)
+);
+// @5:48
+  SB_CARRY \r_counter_cry_c[0]  (
+	.CO(r_counter_cry[0]),
+	.I0(i_COUNTER_c[0]),
+	.I1(GND),
+	.CI(VCC)
+);
+// @5:48
+  SB_CARRY \r_counter_cry_c[1]  (
+	.CO(r_counter_cry[1]),
+	.I0(i_COUNTER_c[1]),
+	.I1(GND),
+	.CI(r_counter_cry[0])
+);
+// @5:48
+  SB_CARRY \r_counter_cry_c[2]  (
+	.CO(r_counter_cry[2]),
+	.I0(i_COUNTER_c[2]),
+	.I1(GND),
+	.CI(r_counter_cry[1])
+);
+// @5:48
+  SB_CARRY \r_counter_cry_c[3]  (
+	.CO(r_counter_cry[3]),
+	.I0(i_COUNTER_c[3]),
+	.I1(GND),
+	.CI(r_counter_cry[2])
+);
+// @5:48
+  SB_CARRY \r_counter_cry_c[4]  (
+	.CO(r_counter_cry[4]),
+	.I0(i_COUNTER_c[4]),
+	.I1(GND),
+	.CI(r_counter_cry[3])
+);
+// @5:48
+  SB_CARRY \r_counter_cry_c[5]  (
+	.CO(r_counter_cry[5]),
+	.I0(i_COUNTER_c[5]),
+	.I1(GND),
+	.CI(r_counter_cry[4])
+);
+  GND GND_cZ (
+	.Y(GND)
+);
+  VCC VCC_cZ (
+	.Y(VCC)
+);
+endmodule /* counter */
+

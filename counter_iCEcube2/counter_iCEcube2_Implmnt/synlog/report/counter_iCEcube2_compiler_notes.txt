@@ -1,0 +1,9 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Features turned ON in Beta Mode:
+@N:: 	Aggregate assignment to multi-dimensional array
+@N:: 	Aggregate assignment to union variable types
+@N: CG364 :"Z:\home\jota\Documents\RTL\Counter\counter_iCEcube2\counter.sv":33:7:33:13|Synthesizing module counter in library work.
+@N|Running in 64-bit mode
+

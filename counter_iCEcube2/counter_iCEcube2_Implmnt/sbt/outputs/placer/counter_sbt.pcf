@@ -1,0 +1,35 @@
+set_location r_counter_RNI44T6[0] 2 28 2 # SB_LUT4 (LogicCell: r_counter_RNI44T6[0]_LC_0)
+set_location r_counter_RNIJEU3[6] 2 28 1 # SB_LUT4 (LogicCell: r_counter_RNIJEU3[6]_LC_1)
+set_location r_counter_RNO[0] 1 28 0 # SB_LUT4 (LogicCell: r_counter[0]_LC_2)
+set_location r_counter[0] 1 28 0 # SB_DFFER (LogicCell: r_counter[0]_LC_2)
+set_location r_counter_cry_c[0] 1 28 0 # SB_CARRY (LogicCell: r_counter[0]_LC_2)
+set_location r_counter_RNO[1] 1 28 1 # SB_LUT4 (LogicCell: r_counter[1]_LC_3)
+set_location r_counter[1] 1 28 1 # SB_DFFER (LogicCell: r_counter[1]_LC_3)
+set_location r_counter_cry_c[1] 1 28 1 # SB_CARRY (LogicCell: r_counter[1]_LC_3)
+set_location r_counter_RNO[2] 1 28 2 # SB_LUT4 (LogicCell: r_counter[2]_LC_4)
+set_location r_counter[2] 1 28 2 # SB_DFFER (LogicCell: r_counter[2]_LC_4)
+set_location r_counter_cry_c[2] 1 28 2 # SB_CARRY (LogicCell: r_counter[2]_LC_4)
+set_location r_counter_RNO[3] 1 28 3 # SB_LUT4 (LogicCell: r_counter[3]_LC_5)
+set_location r_counter[3] 1 28 3 # SB_DFFER (LogicCell: r_counter[3]_LC_5)
+set_location r_counter_cry_c[3] 1 28 3 # SB_CARRY (LogicCell: r_counter[3]_LC_5)
+set_location r_counter_RNO[4] 1 28 4 # SB_LUT4 (LogicCell: r_counter[4]_LC_6)
+set_location r_counter[4] 1 28 4 # SB_DFFER (LogicCell: r_counter[4]_LC_6)
+set_location r_counter_cry_c[4] 1 28 4 # SB_CARRY (LogicCell: r_counter[4]_LC_6)
+set_location r_counter_RNO[5] 1 28 5 # SB_LUT4 (LogicCell: r_counter[5]_LC_7)
+set_location r_counter[5] 1 28 5 # SB_DFFER (LogicCell: r_counter[5]_LC_7)
+set_location r_counter_cry_c[5] 1 28 5 # SB_CARRY (LogicCell: r_counter[5]_LC_7)
+set_location r_counter_RNO[6] 1 28 6 # SB_LUT4 (LogicCell: r_counter[6]_LC_8)
+set_location r_counter[6] 1 28 6 # SB_DFFER (LogicCell: r_counter[6]_LC_8)
+set_location r_over_run_RNO 1 29 4 # SB_LUT4 (LogicCell: r_over_run_LC_9)
+set_location r_over_run 1 29 4 # SB_DFFR (LogicCell: r_over_run_LC_9)
+set_location GND -1 -1 -1 # GND
+set_io i_CLK_ibuf_gb_io 0 16 1 # ICE_GB_IO
+set_io i_COUNTER_obuf[0] 7 33 1 # ICE_IO
+set_io i_COUNTER_obuf[1] 6 33 1 # ICE_IO
+set_io i_COUNTER_obuf[2] 5 33 1 # ICE_IO
+set_io i_COUNTER_obuf[3] 4 33 1 # ICE_IO
+set_io i_COUNTER_obuf[4] 4 33 0 # ICE_IO
+set_io i_COUNTER_obuf[5] 3 33 1 # ICE_IO
+set_io i_COUNTER_obuf[6] 3 33 0 # ICE_IO
+set_io i_OVER_RUN_obuf 1 33 0 # ICE_IO
+set_io i_RST_ibuf 0 30 0 # ICE_IO

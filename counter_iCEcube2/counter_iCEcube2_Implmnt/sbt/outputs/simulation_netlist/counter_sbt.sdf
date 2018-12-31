@@ -1,0 +1,4072 @@
+(DELAYFILE                 // Header Section
+   (SDFVERSION "3.0")
+   (DESIGN "counter")
+   (DATE "Sun Dec 30 20:03:52 2018")
+   (VENDOR "SiliconBlue Technologies Corporation")
+   (DIVIDER /)
+   (TIMESCALE 1ps)
+   (CELL
+      (CELLTYPE "LogicCell40")
+      (INSTANCE r_counter_RNI44T6_0_LC_2_28_2)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH in0 lcout (380.112:399.158:420.168) (326.659:343.027:361.082))
+            (IOPATH in1 lcout (338.537:355.5:374.213) (320.72:336.79:354.517))
+            (IOPATH in2 lcout (320.72:336.79:354.517) (296.963:311.843:328.257))
+            (IOPATH in3 lcout (267.266:280.658:295.431) (243.509:255.711:269.17))
+            (IOPATH in0 ltout (308.841:324.316:341.387) (326.659:343.027:361.082))
+            (IOPATH in1 ltout (273.206:286.895:301.996) (320.72:336.79:354.517))
+            (IOPATH in2 ltout (261.327:274.421:288.866) (291.023:305.606:321.691))
+            (IOPATH in3 ltout (225.692:237:249.475) (231.631:243.237:256.04))
+            (IOPATH in1 carryout (219.752:230.763:242.91) (207.874:218.29:229.78))
+            (IOPATH in2 carryout (195.995:205.816:216.649) (112.846:118.5:124.738))
+            (IOPATH carryin carryout (106.907:112.263:118.172) (89.0888:93.5528:98.477))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LogicCell40")
+      (INSTANCE r_counter_RNIJEU3_6_LC_2_28_1)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH in0 lcout (380.112:399.158:420.168) (326.659:343.027:361.082))
+            (IOPATH in1 lcout (338.537:355.5:374.213) (320.72:336.79:354.517))
+            (IOPATH in2 lcout (320.72:336.79:354.517) (296.963:311.843:328.257))
+            (IOPATH in3 lcout (267.266:280.658:295.431) (243.509:255.711:269.17))
+            (IOPATH in0 ltout (308.841:324.316:341.387) (326.659:343.027:361.082))
+            (IOPATH in1 ltout (273.206:286.895:301.996) (320.72:336.79:354.517))
+            (IOPATH in2 ltout (261.327:274.421:288.866) (291.023:305.606:321.691))
+            (IOPATH in3 ltout (225.692:237:249.475) (231.631:243.237:256.04))
+            (IOPATH in1 carryout (219.752:230.763:242.91) (207.874:218.29:229.78))
+            (IOPATH in2 carryout (195.995:205.816:216.649) (112.846:118.5:124.738))
+            (IOPATH carryin carryout (106.907:112.263:118.172) (89.0888:93.5528:98.477))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LogicCell40")
+      (INSTANCE r_over_run_LC_1_29_4)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge clk) lcout (457.322:480.237:505.515) (457.322:480.237:505.515))
+            (IOPATH sr lcout (0:0:0) (507.414:532.839:560.886))
+            (IOPATH in0 ltout (308.841:324.316:341.387) (326.659:343.027:361.082))
+            (IOPATH in1 ltout (273.206:286.895:301.996) (320.72:336.79:354.517))
+            (IOPATH in2 ltout (261.327:274.421:288.866) (291.023:305.606:321.691))
+            (IOPATH in3 ltout (225.692:237:249.475) (231.631:243.237:256.04))
+            (IOPATH in1 carryout (219.752:230.763:242.91) (207.874:218.29:229.78))
+            (IOPATH in2 carryout (195.995:205.816:216.649) (112.846:118.5:124.738))
+            (IOPATH carryin carryout (106.907:112.263:118.172) (89.0888:93.5528:98.477))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge ce) (posedge clk) (0:0:0))
+         (SETUP (negedge ce) (posedge clk) (0:0:0))
+         (HOLD (posedge ce) (posedge clk) (0:0:0))
+         (HOLD (negedge ce) (posedge clk) (0:0:0))
+         (SETUP (posedge in0) (posedge clk) (397.93:417.869:439.864))
+         (SETUP (negedge in0) (posedge clk) (338.537:355.5:374.213))
+         (HOLD (posedge in0) (posedge clk) (0:0:0))
+         (HOLD (negedge in0) (posedge clk) (0:0:0))
+         (SETUP (posedge in1) (posedge clk) (338.537:355.5:374.213))
+         (SETUP (negedge in1) (posedge clk) (320.72:336.79:354.517))
+         (HOLD (posedge in1) (posedge clk) (0:0:0))
+         (HOLD (negedge in1) (posedge clk) (0:0:0))
+         (SETUP (posedge in2) (posedge clk) (314.78:330.553:347.952))
+         (SETUP (negedge in2) (posedge clk) (273.206:286.895:301.996))
+         (HOLD (posedge in2) (posedge clk) (0:0:0))
+         (HOLD (negedge in2) (posedge clk) (0:0:0))
+         (SETUP (posedge in3) (posedge clk) (231.631:243.237:256.04))
+         (SETUP (negedge in3) (posedge clk) (184.117:193.342:203.519))
+         (HOLD (posedge in3) (posedge clk) (0:0:0))
+         (HOLD (negedge in3) (posedge clk) (0:0:0))
+         (RECOVERY (posedge sr) (posedge clk) (0:0:0))
+         (RECOVERY (negedge sr) (posedge clk) (135.237:142.013:149.488))
+         (REMOVAL (posedge sr) (posedge clk) (0:0:0))
+         (REMOVAL (negedge sr) (posedge clk) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "LogicCell40")
+      (INSTANCE r_counter_6_LC_1_28_6)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge clk) lcout (457.322:480.237:505.515) (457.322:480.237:505.515))
+            (IOPATH sr lcout (0:0:0) (507.414:532.839:560.886))
+            (IOPATH in0 ltout (308.841:324.316:341.387) (326.659:343.027:361.082))
+            (IOPATH in1 ltout (273.206:286.895:301.996) (320.72:336.79:354.517))
+            (IOPATH in2 ltout (261.327:274.421:288.866) (291.023:305.606:321.691))
+            (IOPATH in3 ltout (225.692:237:249.475) (231.631:243.237:256.04))
+            (IOPATH in1 carryout (219.752:230.763:242.91) (207.874:218.29:229.78))
+            (IOPATH in2 carryout (195.995:205.816:216.649) (112.846:118.5:124.738))
+            (IOPATH carryin carryout (106.907:112.263:118.172) (89.0888:93.5528:98.477))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge ce) (posedge clk) (0:0:0))
+         (SETUP (negedge ce) (posedge clk) (0:0:0))
+         (HOLD (posedge ce) (posedge clk) (0:0:0))
+         (HOLD (negedge ce) (posedge clk) (0:0:0))
+         (SETUP (posedge in0) (posedge clk) (397.93:417.869:439.864))
+         (SETUP (negedge in0) (posedge clk) (338.537:355.5:374.213))
+         (HOLD (posedge in0) (posedge clk) (0:0:0))
+         (HOLD (negedge in0) (posedge clk) (0:0:0))
+         (SETUP (posedge in1) (posedge clk) (338.537:355.5:374.213))
+         (SETUP (negedge in1) (posedge clk) (320.72:336.79:354.517))
+         (HOLD (posedge in1) (posedge clk) (0:0:0))
+         (HOLD (negedge in1) (posedge clk) (0:0:0))
+         (SETUP (posedge in2) (posedge clk) (314.78:330.553:347.952))
+         (SETUP (negedge in2) (posedge clk) (273.206:286.895:301.996))
+         (HOLD (posedge in2) (posedge clk) (0:0:0))
+         (HOLD (negedge in2) (posedge clk) (0:0:0))
+         (SETUP (posedge in3) (posedge clk) (231.631:243.237:256.04))
+         (SETUP (negedge in3) (posedge clk) (184.117:193.342:203.519))
+         (HOLD (posedge in3) (posedge clk) (0:0:0))
+         (HOLD (negedge in3) (posedge clk) (0:0:0))
+         (RECOVERY (posedge sr) (posedge clk) (0:0:0))
+         (RECOVERY (negedge sr) (posedge clk) (135.237:142.013:149.488))
+         (REMOVAL (posedge sr) (posedge clk) (0:0:0))
+         (REMOVAL (negedge sr) (posedge clk) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "LogicCell40")
+      (INSTANCE r_counter_5_LC_1_28_5)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge clk) lcout (457.322:480.237:505.515) (457.322:480.237:505.515))
+            (IOPATH sr lcout (0:0:0) (507.414:532.839:560.886))
+            (IOPATH in0 ltout (308.841:324.316:341.387) (326.659:343.027:361.082))
+            (IOPATH in1 ltout (273.206:286.895:301.996) (320.72:336.79:354.517))
+            (IOPATH in2 ltout (261.327:274.421:288.866) (291.023:305.606:321.691))
+            (IOPATH in3 ltout (225.692:237:249.475) (231.631:243.237:256.04))
+            (IOPATH in1 carryout (219.752:230.763:242.91) (207.874:218.29:229.78))
+            (IOPATH in2 carryout (195.995:205.816:216.649) (112.846:118.5:124.738))
+            (IOPATH carryin carryout (106.907:112.263:118.172) (89.0888:93.5528:98.477))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge ce) (posedge clk) (0:0:0))
+         (SETUP (negedge ce) (posedge clk) (0:0:0))
+         (HOLD (posedge ce) (posedge clk) (0:0:0))
+         (HOLD (negedge ce) (posedge clk) (0:0:0))
+         (SETUP (posedge in0) (posedge clk) (397.93:417.869:439.864))
+         (SETUP (negedge in0) (posedge clk) (338.537:355.5:374.213))
+         (HOLD (posedge in0) (posedge clk) (0:0:0))
+         (HOLD (negedge in0) (posedge clk) (0:0:0))
+         (SETUP (posedge in1) (posedge clk) (338.537:355.5:374.213))
+         (SETUP (negedge in1) (posedge clk) (320.72:336.79:354.517))
+         (HOLD (posedge in1) (posedge clk) (0:0:0))
+         (HOLD (negedge in1) (posedge clk) (0:0:0))
+         (SETUP (posedge in2) (posedge clk) (314.78:330.553:347.952))
+         (SETUP (negedge in2) (posedge clk) (273.206:286.895:301.996))
+         (HOLD (posedge in2) (posedge clk) (0:0:0))
+         (HOLD (negedge in2) (posedge clk) (0:0:0))
+         (SETUP (posedge in3) (posedge clk) (231.631:243.237:256.04))
+         (SETUP (negedge in3) (posedge clk) (184.117:193.342:203.519))
+         (HOLD (posedge in3) (posedge clk) (0:0:0))
+         (HOLD (negedge in3) (posedge clk) (0:0:0))
+         (RECOVERY (posedge sr) (posedge clk) (0:0:0))
+         (RECOVERY (negedge sr) (posedge clk) (135.237:142.013:149.488))
+         (REMOVAL (posedge sr) (posedge clk) (0:0:0))
+         (REMOVAL (negedge sr) (posedge clk) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "LogicCell40")
+      (INSTANCE r_counter_4_LC_1_28_4)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge clk) lcout (457.322:480.237:505.515) (457.322:480.237:505.515))
+            (IOPATH sr lcout (0:0:0) (507.414:532.839:560.886))
+            (IOPATH in0 ltout (308.841:324.316:341.387) (326.659:343.027:361.082))
+            (IOPATH in1 ltout (273.206:286.895:301.996) (320.72:336.79:354.517))
+            (IOPATH in2 ltout (261.327:274.421:288.866) (291.023:305.606:321.691))
+            (IOPATH in3 ltout (225.692:237:249.475) (231.631:243.237:256.04))
+            (IOPATH in1 carryout (219.752:230.763:242.91) (207.874:218.29:229.78))
+            (IOPATH in2 carryout (195.995:205.816:216.649) (112.846:118.5:124.738))
+            (IOPATH carryin carryout (106.907:112.263:118.172) (89.0888:93.5528:98.477))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge ce) (posedge clk) (0:0:0))
+         (SETUP (negedge ce) (posedge clk) (0:0:0))
+         (HOLD (posedge ce) (posedge clk) (0:0:0))
+         (HOLD (negedge ce) (posedge clk) (0:0:0))
+         (SETUP (posedge in0) (posedge clk) (397.93:417.869:439.864))
+         (SETUP (negedge in0) (posedge clk) (338.537:355.5:374.213))
+         (HOLD (posedge in0) (posedge clk) (0:0:0))
+         (HOLD (negedge in0) (posedge clk) (0:0:0))
+         (SETUP (posedge in1) (posedge clk) (338.537:355.5:374.213))
+         (SETUP (negedge in1) (posedge clk) (320.72:336.79:354.517))
+         (HOLD (posedge in1) (posedge clk) (0:0:0))
+         (HOLD (negedge in1) (posedge clk) (0:0:0))
+         (SETUP (posedge in2) (posedge clk) (314.78:330.553:347.952))
+         (SETUP (negedge in2) (posedge clk) (273.206:286.895:301.996))
+         (HOLD (posedge in2) (posedge clk) (0:0:0))
+         (HOLD (negedge in2) (posedge clk) (0:0:0))
+         (SETUP (posedge in3) (posedge clk) (231.631:243.237:256.04))
+         (SETUP (negedge in3) (posedge clk) (184.117:193.342:203.519))
+         (HOLD (posedge in3) (posedge clk) (0:0:0))
+         (HOLD (negedge in3) (posedge clk) (0:0:0))
+         (RECOVERY (posedge sr) (posedge clk) (0:0:0))
+         (RECOVERY (negedge sr) (posedge clk) (135.237:142.013:149.488))
+         (REMOVAL (posedge sr) (posedge clk) (0:0:0))
+         (REMOVAL (negedge sr) (posedge clk) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "LogicCell40")
+      (INSTANCE r_counter_3_LC_1_28_3)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge clk) lcout (457.322:480.237:505.515) (457.322:480.237:505.515))
+            (IOPATH sr lcout (0:0:0) (507.414:532.839:560.886))
+            (IOPATH in0 ltout (308.841:324.316:341.387) (326.659:343.027:361.082))
+            (IOPATH in1 ltout (273.206:286.895:301.996) (320.72:336.79:354.517))
+            (IOPATH in2 ltout (261.327:274.421:288.866) (291.023:305.606:321.691))
+            (IOPATH in3 ltout (225.692:237:249.475) (231.631:243.237:256.04))
+            (IOPATH in1 carryout (219.752:230.763:242.91) (207.874:218.29:229.78))
+            (IOPATH in2 carryout (195.995:205.816:216.649) (112.846:118.5:124.738))
+            (IOPATH carryin carryout (106.907:112.263:118.172) (89.0888:93.5528:98.477))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge ce) (posedge clk) (0:0:0))
+         (SETUP (negedge ce) (posedge clk) (0:0:0))
+         (HOLD (posedge ce) (posedge clk) (0:0:0))
+         (HOLD (negedge ce) (posedge clk) (0:0:0))
+         (SETUP (posedge in0) (posedge clk) (397.93:417.869:439.864))
+         (SETUP (negedge in0) (posedge clk) (338.537:355.5:374.213))
+         (HOLD (posedge in0) (posedge clk) (0:0:0))
+         (HOLD (negedge in0) (posedge clk) (0:0:0))
+         (SETUP (posedge in1) (posedge clk) (338.537:355.5:374.213))
+         (SETUP (negedge in1) (posedge clk) (320.72:336.79:354.517))
+         (HOLD (posedge in1) (posedge clk) (0:0:0))
+         (HOLD (negedge in1) (posedge clk) (0:0:0))
+         (SETUP (posedge in2) (posedge clk) (314.78:330.553:347.952))
+         (SETUP (negedge in2) (posedge clk) (273.206:286.895:301.996))
+         (HOLD (posedge in2) (posedge clk) (0:0:0))
+         (HOLD (negedge in2) (posedge clk) (0:0:0))
+         (SETUP (posedge in3) (posedge clk) (231.631:243.237:256.04))
+         (SETUP (negedge in3) (posedge clk) (184.117:193.342:203.519))
+         (HOLD (posedge in3) (posedge clk) (0:0:0))
+         (HOLD (negedge in3) (posedge clk) (0:0:0))
+         (RECOVERY (posedge sr) (posedge clk) (0:0:0))
+         (RECOVERY (negedge sr) (posedge clk) (135.237:142.013:149.488))
+         (REMOVAL (posedge sr) (posedge clk) (0:0:0))
+         (REMOVAL (negedge sr) (posedge clk) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "LogicCell40")
+      (INSTANCE r_counter_2_LC_1_28_2)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge clk) lcout (457.322:480.237:505.515) (457.322:480.237:505.515))
+            (IOPATH sr lcout (0:0:0) (507.414:532.839:560.886))
+            (IOPATH in0 ltout (308.841:324.316:341.387) (326.659:343.027:361.082))
+            (IOPATH in1 ltout (273.206:286.895:301.996) (320.72:336.79:354.517))
+            (IOPATH in2 ltout (261.327:274.421:288.866) (291.023:305.606:321.691))
+            (IOPATH in3 ltout (225.692:237:249.475) (231.631:243.237:256.04))
+            (IOPATH in1 carryout (219.752:230.763:242.91) (207.874:218.29:229.78))
+            (IOPATH in2 carryout (195.995:205.816:216.649) (112.846:118.5:124.738))
+            (IOPATH carryin carryout (106.907:112.263:118.172) (89.0888:93.5528:98.477))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge ce) (posedge clk) (0:0:0))
+         (SETUP (negedge ce) (posedge clk) (0:0:0))
+         (HOLD (posedge ce) (posedge clk) (0:0:0))
+         (HOLD (negedge ce) (posedge clk) (0:0:0))
+         (SETUP (posedge in0) (posedge clk) (397.93:417.869:439.864))
+         (SETUP (negedge in0) (posedge clk) (338.537:355.5:374.213))
+         (HOLD (posedge in0) (posedge clk) (0:0:0))
+         (HOLD (negedge in0) (posedge clk) (0:0:0))
+         (SETUP (posedge in1) (posedge clk) (338.537:355.5:374.213))
+         (SETUP (negedge in1) (posedge clk) (320.72:336.79:354.517))
+         (HOLD (posedge in1) (posedge clk) (0:0:0))
+         (HOLD (negedge in1) (posedge clk) (0:0:0))
+         (SETUP (posedge in2) (posedge clk) (314.78:330.553:347.952))
+         (SETUP (negedge in2) (posedge clk) (273.206:286.895:301.996))
+         (HOLD (posedge in2) (posedge clk) (0:0:0))
+         (HOLD (negedge in2) (posedge clk) (0:0:0))
+         (SETUP (posedge in3) (posedge clk) (231.631:243.237:256.04))
+         (SETUP (negedge in3) (posedge clk) (184.117:193.342:203.519))
+         (HOLD (posedge in3) (posedge clk) (0:0:0))
+         (HOLD (negedge in3) (posedge clk) (0:0:0))
+         (RECOVERY (posedge sr) (posedge clk) (0:0:0))
+         (RECOVERY (negedge sr) (posedge clk) (135.237:142.013:149.488))
+         (REMOVAL (posedge sr) (posedge clk) (0:0:0))
+         (REMOVAL (negedge sr) (posedge clk) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "LogicCell40")
+      (INSTANCE r_counter_1_LC_1_28_1)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge clk) lcout (457.322:480.237:505.515) (457.322:480.237:505.515))
+            (IOPATH sr lcout (0:0:0) (507.414:532.839:560.886))
+            (IOPATH in0 ltout (308.841:324.316:341.387) (326.659:343.027:361.082))
+            (IOPATH in1 ltout (273.206:286.895:301.996) (320.72:336.79:354.517))
+            (IOPATH in2 ltout (261.327:274.421:288.866) (291.023:305.606:321.691))
+            (IOPATH in3 ltout (225.692:237:249.475) (231.631:243.237:256.04))
+            (IOPATH in1 carryout (219.752:230.763:242.91) (207.874:218.29:229.78))
+            (IOPATH in2 carryout (195.995:205.816:216.649) (112.846:118.5:124.738))
+            (IOPATH carryin carryout (106.907:112.263:118.172) (89.0888:93.5528:98.477))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge ce) (posedge clk) (0:0:0))
+         (SETUP (negedge ce) (posedge clk) (0:0:0))
+         (HOLD (posedge ce) (posedge clk) (0:0:0))
+         (HOLD (negedge ce) (posedge clk) (0:0:0))
+         (SETUP (posedge in0) (posedge clk) (397.93:417.869:439.864))
+         (SETUP (negedge in0) (posedge clk) (338.537:355.5:374.213))
+         (HOLD (posedge in0) (posedge clk) (0:0:0))
+         (HOLD (negedge in0) (posedge clk) (0:0:0))
+         (SETUP (posedge in1) (posedge clk) (338.537:355.5:374.213))
+         (SETUP (negedge in1) (posedge clk) (320.72:336.79:354.517))
+         (HOLD (posedge in1) (posedge clk) (0:0:0))
+         (HOLD (negedge in1) (posedge clk) (0:0:0))
+         (SETUP (posedge in2) (posedge clk) (314.78:330.553:347.952))
+         (SETUP (negedge in2) (posedge clk) (273.206:286.895:301.996))
+         (HOLD (posedge in2) (posedge clk) (0:0:0))
+         (HOLD (negedge in2) (posedge clk) (0:0:0))
+         (SETUP (posedge in3) (posedge clk) (231.631:243.237:256.04))
+         (SETUP (negedge in3) (posedge clk) (184.117:193.342:203.519))
+         (HOLD (posedge in3) (posedge clk) (0:0:0))
+         (HOLD (negedge in3) (posedge clk) (0:0:0))
+         (RECOVERY (posedge sr) (posedge clk) (0:0:0))
+         (RECOVERY (negedge sr) (posedge clk) (135.237:142.013:149.488))
+         (REMOVAL (posedge sr) (posedge clk) (0:0:0))
+         (REMOVAL (negedge sr) (posedge clk) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "LogicCell40")
+      (INSTANCE r_counter_0_LC_1_28_0)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge clk) lcout (457.322:480.237:505.515) (457.322:480.237:505.515))
+            (IOPATH sr lcout (0:0:0) (507.414:532.839:560.886))
+            (IOPATH in0 ltout (308.841:324.316:341.387) (326.659:343.027:361.082))
+            (IOPATH in1 ltout (273.206:286.895:301.996) (320.72:336.79:354.517))
+            (IOPATH in2 ltout (261.327:274.421:288.866) (291.023:305.606:321.691))
+            (IOPATH in3 ltout (225.692:237:249.475) (231.631:243.237:256.04))
+            (IOPATH in1 carryout (219.752:230.763:242.91) (207.874:218.29:229.78))
+            (IOPATH in2 carryout (195.995:205.816:216.649) (112.846:118.5:124.738))
+            (IOPATH carryin carryout (106.907:112.263:118.172) (89.0888:93.5528:98.477))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge ce) (posedge clk) (0:0:0))
+         (SETUP (negedge ce) (posedge clk) (0:0:0))
+         (HOLD (posedge ce) (posedge clk) (0:0:0))
+         (HOLD (negedge ce) (posedge clk) (0:0:0))
+         (SETUP (posedge in0) (posedge clk) (397.93:417.869:439.864))
+         (SETUP (negedge in0) (posedge clk) (338.537:355.5:374.213))
+         (HOLD (posedge in0) (posedge clk) (0:0:0))
+         (HOLD (negedge in0) (posedge clk) (0:0:0))
+         (SETUP (posedge in1) (posedge clk) (338.537:355.5:374.213))
+         (SETUP (negedge in1) (posedge clk) (320.72:336.79:354.517))
+         (HOLD (posedge in1) (posedge clk) (0:0:0))
+         (HOLD (negedge in1) (posedge clk) (0:0:0))
+         (SETUP (posedge in2) (posedge clk) (314.78:330.553:347.952))
+         (SETUP (negedge in2) (posedge clk) (273.206:286.895:301.996))
+         (HOLD (posedge in2) (posedge clk) (0:0:0))
+         (HOLD (negedge in2) (posedge clk) (0:0:0))
+         (SETUP (posedge in3) (posedge clk) (231.631:243.237:256.04))
+         (SETUP (negedge in3) (posedge clk) (184.117:193.342:203.519))
+         (HOLD (posedge in3) (posedge clk) (0:0:0))
+         (HOLD (negedge in3) (posedge clk) (0:0:0))
+         (RECOVERY (posedge sr) (posedge clk) (0:0:0))
+         (RECOVERY (negedge sr) (posedge clk) (135.237:142.013:149.488))
+         (REMOVAL (posedge sr) (posedge clk) (0:0:0))
+         (REMOVAL (negedge sr) (posedge clk) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "ICE_CARRY_IN_MUX")
+      (INSTANCE IN_MUX_bfv_1_28_0_)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH carryinitin carryinitout (166.299:174.632:183.824) (148.481:155.921:164.128))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__24)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__25)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__26)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__27)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "CEMux")
+      (INSTANCE I__28)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (510.776:536.369:564.601) (469.201:492.711:518.645))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__29)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__30)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__31)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Odrv4")
+      (INSTANCE I__32)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__33)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__34)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__35)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_v")
+      (INSTANCE I__36)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_h")
+      (INSTANCE I__37)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (255.388:268.185:282.301) (267.266:280.658:295.431))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_s0_v")
+      (INSTANCE I__38)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (172.238:180.869:190.389) (160.36:168.395:177.259))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__39)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "IoInMux")
+      (INSTANCE I__40)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "CascadeMux")
+      (INSTANCE I__41)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (0:0:0) (0:0:0))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__42)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__43)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__44)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Odrv4")
+      (INSTANCE I__45)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__46)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__47)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__48)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_h")
+      (INSTANCE I__49)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (255.388:268.185:282.301) (267.266:280.658:295.431))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_s2_v")
+      (INSTANCE I__50)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (213.813:224.527:236.345) (213.813:224.527:236.345))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__51)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "IoInMux")
+      (INSTANCE I__52)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__53)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__54)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__55)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Odrv4")
+      (INSTANCE I__56)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__57)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__58)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__59)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_v")
+      (INSTANCE I__60)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "CascadeMux")
+      (INSTANCE I__61)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (0:0:0) (0:0:0))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_s0_v")
+      (INSTANCE I__62)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (172.238:180.869:190.389) (160.36:168.395:177.259))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__63)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "IoInMux")
+      (INSTANCE I__64)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__65)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__66)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__67)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__68)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Odrv12")
+      (INSTANCE I__69)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (415.748:436.58:459.559) (457.322:480.237:505.515))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__70)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__71)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s4_v")
+      (INSTANCE I__72)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (154.421:162.158:170.693) (178.178:187.106:196.954))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__73)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "IoInMux")
+      (INSTANCE I__74)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__75)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__76)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Odrv4")
+      (INSTANCE I__77)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__78)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__79)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_s1_v")
+      (INSTANCE I__80)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (172.238:180.869:190.389) (166.299:174.632:183.824))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "CascadeMux")
+      (INSTANCE I__81)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (0:0:0) (0:0:0))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "IoSpan4Mux")
+      (INSTANCE I__82)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (243.509:255.711:269.17) (273.206:286.895:301.996))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__83)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "IoInMux")
+      (INSTANCE I__84)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__85)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__86)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Odrv4")
+      (INSTANCE I__87)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__88)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__89)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_h")
+      (INSTANCE I__90)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (255.388:268.185:282.301) (267.266:280.658:295.431))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_s1_v")
+      (INSTANCE I__91)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (172.238:180.869:190.389) (166.299:174.632:183.824))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__92)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "IoInMux")
+      (INSTANCE I__93)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__94)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__95)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Odrv4")
+      (INSTANCE I__96)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__97)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__98)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_v")
+      (INSTANCE I__99)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_s0_v")
+      (INSTANCE I__100)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (172.238:180.869:190.389) (160.36:168.395:177.259))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__101)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "IoInMux")
+      (INSTANCE I__102)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__103)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Odrv4")
+      (INSTANCE I__104)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "SRMux")
+      (INSTANCE I__105)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (391.991:411.632:433.299) (302.902:318.079:334.822))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_v")
+      (INSTANCE I__106)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__107)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "SRMux")
+      (INSTANCE I__108)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (391.991:411.632:433.299) (302.902:318.079:334.822))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "gio2CtrlBuf")
+      (INSTANCE I__109)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (0:0:0) (0:0:0))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "GlobalMux")
+      (INSTANCE I__110)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (130.664:137.211:144.433) (65.3318:68.6054:72.2165))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "ClkMux")
+      (INSTANCE I__111)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (261.327:274.421:288.866) (195.995:205.816:216.649))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "ClkMux")
+      (INSTANCE I__112)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (261.327:274.421:288.866) (195.995:205.816:216.649))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Odrv12")
+      (INSTANCE I__113)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (415.748:436.58:459.559) (457.322:480.237:505.515))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LocalMux")
+      (INSTANCE I__114)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (279.145:293.132:308.561) (261.327:274.421:288.866))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "IoInMux")
+      (INSTANCE I__115)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__116)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__117)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__118)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "InMux")
+      (INSTANCE I__119)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO")
+      (INSTANCE i_COUNTER_obuf_6_preio)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "IO_PAD")
+      (INSTANCE i_COUNTER_obuf_6_iopad)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DIN PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1768:1768:1768) (1634:1634:1634))
+            (IOPATH PACKAGEPIN DOUT (510:510:510) (460:460:460))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO")
+      (INSTANCE i_COUNTER_obuf_1_preio)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "IO_PAD")
+      (INSTANCE i_COUNTER_obuf_1_iopad)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DIN PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1768:1768:1768) (1634:1634:1634))
+            (IOPATH PACKAGEPIN DOUT (510:510:510) (460:460:460))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO")
+      (INSTANCE i_COUNTER_obuf_0_preio)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "IO_PAD")
+      (INSTANCE i_COUNTER_obuf_0_iopad)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DIN PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1768:1768:1768) (1634:1634:1634))
+            (IOPATH PACKAGEPIN DOUT (510:510:510) (460:460:460))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO")
+      (INSTANCE i_COUNTER_obuf_3_preio)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "IO_PAD")
+      (INSTANCE i_COUNTER_obuf_3_iopad)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DIN PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1768:1768:1768) (1634:1634:1634))
+            (IOPATH PACKAGEPIN DOUT (510:510:510) (460:460:460))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO")
+      (INSTANCE i_COUNTER_obuf_2_preio)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "IO_PAD")
+      (INSTANCE i_COUNTER_obuf_2_iopad)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DIN PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1768:1768:1768) (1634:1634:1634))
+            (IOPATH PACKAGEPIN DOUT (510:510:510) (460:460:460))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO")
+      (INSTANCE i_OVER_RUN_obuf_preio)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "IO_PAD")
+      (INSTANCE i_OVER_RUN_obuf_iopad)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DIN PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1768:1768:1768) (1634:1634:1634))
+            (IOPATH PACKAGEPIN DOUT (510:510:510) (460:460:460))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO")
+      (INSTANCE i_COUNTER_obuf_5_preio)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "IO_PAD")
+      (INSTANCE i_COUNTER_obuf_5_iopad)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DIN PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1768:1768:1768) (1634:1634:1634))
+            (IOPATH PACKAGEPIN DOUT (510:510:510) (460:460:460))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO")
+      (INSTANCE i_COUNTER_obuf_4_preio)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "IO_PAD")
+      (INSTANCE i_COUNTER_obuf_4_iopad)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DIN PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1768:1768:1768) (1634:1634:1634))
+            (IOPATH PACKAGEPIN DOUT (510:510:510) (460:460:460))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO")
+      (INSTANCE i_RST_ibuf_preio)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "IO_PAD")
+      (INSTANCE i_RST_ibuf_iopad)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DIN PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1681:1681:1681) (1617:1617:1617))
+            (IOPATH PACKAGEPIN DOUT (510:510:510) (460:460:460))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO")
+      (INSTANCE i_CLK_ibuf_gb_io_preio)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "IO_PAD")
+      (INSTANCE i_CLK_ibuf_gb_io_iopad)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DIN PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1914:1914:1914) (2088:2088:2088))
+            (IOPATH OE PACKAGEPIN (1681:1681:1681) (1617:1617:1617))
+            (IOPATH PACKAGEPIN DOUT (510:510:510) (460:460:460))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_GBUF")
+      (INSTANCE i_CLK_ibuf_gb_io_preiogbuf)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PADSIGNALTOGLOBALBUFFER GLOBALBUFFEROUTPUT (1577.05:1656.07:1743.24) (1446.39:1518.86:1598.81))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "ADTTRIBUF")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH T O (914.051:959.851:1010.37) (1173:1231.78:1296.61))
+            (IOPATH T O (914.051:959.851:1010.37) (1173:1231.78:1296.61))
+            (IOPATH I O (914.051:959.851:1010.37) (1190.82:1250.49:1316.31))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "CascadeBuf")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (124.724:130.974:137.868) (154.421:162.158:170.693))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "DL")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH SET Q (0:0:0) (0:0:0))
+            (IOPATH RST Q (0:0:0) (0:0:0))
+            (IOPATH (posedge G) Q (0:0:0) (0:0:0))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge D) (negedge G) (0:0:0))
+         (SETUP (negedge D) (negedge G) (0:0:0))
+         (HOLD (posedge D) (negedge G) (0:0:0))
+         (HOLD (negedge D) (negedge G) (0:0:0))
+         (RECOVERY (posedge RST) (negedge G) (0:0:0))
+         (RECOVERY (negedge RST) (negedge G) (0:0:0))
+         (REMOVAL (posedge RST) (negedge G) (0:0:0))
+         (REMOVAL (negedge RST) (negedge G) (0:0:0))
+         (RECOVERY (posedge SET) (negedge G) (0:0:0))
+         (RECOVERY (negedge SET) (negedge G) (0:0:0))
+         (REMOVAL (posedge SET) (negedge G) (0:0:0))
+         (REMOVAL (negedge SET) (negedge G) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "GIOBUG")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PACKAGE_PIN GLOBAL_BUFFER_OUTPUT (1514.51:1590.4:1674.11) (1455.12:1528.03:1608.46))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Glb2LocalMux")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (380.112:399.158:420.168) (302.902:318.079:334.822))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "INV")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (0:0:0) (0:0:0))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "LUT_MUX")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH D0 O (70.0832:73.5948:77.4686) (70.0832:73.5948:77.4686))
+            (IOPATH D1 O (24.6479:25.8829:27.2453) (24.6479:25.8829:27.2453))
+            (IOPATH S O (289.242:303.735:319.722) (289.242:303.735:319.722))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "MUX4")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I0I1I2I3S0S1 O (0:0:0) (0:0:0))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCORE (593.925:623.685:656.513) (593.925:623.685:656.513))
+            (IOPATH PLLIN PLLOUTGLOBAL (593.925:623.685:656.513) (593.925:623.685:656.513))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_2")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCOREA (593.925:623.685:656.513) (593.925:623.685:656.513))
+            (IOPATH PLLIN PLLOUTGLOBALA (593.925:623.685:656.513) (593.925:623.685:656.513))
+            (IOPATH PLLIN PLLOUTCOREB (593.925:623.685:656.513) (593.925:623.685:656.513))
+            (IOPATH PLLIN PLLOUTGLOBALB (593.925:623.685:656.513) (593.925:623.685:656.513))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_2F")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCOREA (593.925:623.685:656.513) (593.925:623.685:656.513))
+            (IOPATH PLLIN PLLOUTGLOBALA (593.925:623.685:656.513) (593.925:623.685:656.513))
+            (IOPATH PLLIN PLLOUTCOREB (593.925:623.685:656.513) (593.925:623.685:656.513))
+            (IOPATH PLLIN PLLOUTGLOBALB (593.925:623.685:656.513) (593.925:623.685:656.513))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_2F_FEEDBACK_PATH_DELAY")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCOREA (914.645:960.475:1011.03) (956.219:1004.13:1056.99))
+            (IOPATH PLLIN PLLOUTGLOBALA (1247.24:1309.74:1378.68) (1170.03:1228.66:1293.33))
+            (IOPATH PLLIN PLLOUTCOREB (855.252:898.106:945.379) (902.766:948.001:997.9))
+            (IOPATH PLLIN PLLOUTGLOBALB (979.976:1029.08:1083.25) (1104.7:1160.05:1221.11))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_2F_FEEDBACK_PATH_EXTERNAL")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCOREA (-225.692:-237:-249.475) (-172.238:-180.869:-190.389))
+            (IOPATH PLLIN PLLOUTGLOBALA (-534.533:-561.317:-590.862) (-481.079:-505.185:-531.776))
+            (IOPATH PLLIN PLLOUTCOREB (-225.692:-237:-249.475) (-172.238:-180.869:-190.389))
+            (IOPATH PLLIN PLLOUTGLOBALB (-534.533:-561.317:-590.862) (-481.079:-505.185:-531.776))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_2F_FEEDBACK_PATH_PHASE_AND_DELAY")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCOREA (516.715:542.606:571.167) (540.472:567.553:597.427))
+            (IOPATH PLLIN PLLOUTGLOBALA (855.252:898.106:945.379) (754.285:792.08:833.772))
+            (IOPATH PLLIN PLLOUTCOREB (457.322:480.237:505.515) (487.019:511.422:538.341))
+            (IOPATH PLLIN PLLOUTGLOBALB (587.986:617.448:649.948) (688.953:723.475:761.555))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_2F_FEEDBACK_PATH_SIMPLE")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCOREA (1366.03:1434.48:1509.98) (1371.97:1440.71:1516.55))
+            (IOPATH PLLIN PLLOUTGLOBALA (1698.63:1783.74:1877.63) (1585.78:1665.24:1752.89))
+            (IOPATH PLLIN PLLOUTCOREB (1306.64:1372.11:1444.33) (1318.51:1384.58:1457.46))
+            (IOPATH PLLIN PLLOUTGLOBALB (1431.36:1503.08:1582.2) (1520.45:1596.63:1680.67))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_2_FEEDBACK_PATH_DELAY")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCOREA (397.93:417.869:439.864) (320.72:336.79:354.517))
+            (IOPATH PLLIN PLLOUTGLOBALA (504.836:530.132:558.036) (534.533:561.317:590.862))
+            (IOPATH PLLIN PLLOUTCOREB (855.252:898.106:945.379) (902.766:948.001:997.9))
+            (IOPATH PLLIN PLLOUTGLOBALB (979.976:1029.08:1083.25) (1104.7:1160.05:1221.11))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_2_FEEDBACK_PATH_EXTERNAL")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCOREA (397.93:417.869:439.864) (320.72:336.79:354.517))
+            (IOPATH PLLIN PLLOUTGLOBALA (195.995:205.816:216.649) (225.692:237:249.475))
+            (IOPATH PLLIN PLLOUTCOREB (-225.692:-237:-249.475) (-172.238:-180.869:-190.389))
+            (IOPATH PLLIN PLLOUTGLOBALB (-534.533:-561.317:-590.862) (-481.079:-505.185:-531.776))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_2_FEEDBACK_PATH_PHASE_AND_DELAY")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCOREA (397.93:417.869:439.864) (320.72:336.79:354.517))
+            (IOPATH PLLIN PLLOUTGLOBALA (504.836:530.132:558.036) (534.533:561.317:590.862))
+            (IOPATH PLLIN PLLOUTCOREB (457.322:480.237:505.515) (487.019:511.422:538.341))
+            (IOPATH PLLIN PLLOUTGLOBALB (587.986:617.448:649.948) (688.953:723.475:761.555))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_2_FEEDBACK_PATH_SIMPLE")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCOREA (397.93:417.869:439.864) (320.72:336.79:354.517))
+            (IOPATH PLLIN PLLOUTGLOBALA (504.836:530.132:558.036) (534.533:561.317:590.862))
+            (IOPATH PLLIN PLLOUTCOREB (1306.64:1372.11:1444.33) (1318.51:1384.58:1457.46))
+            (IOPATH PLLIN PLLOUTGLOBALB (1431.36:1503.08:1582.2) (1520.45:1596.63:1680.67))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_FEEDBACK_PATH_DELAY")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCORE (914.645:960.475:1011.03) (956.219:1004.13:1056.99))
+            (IOPATH PLLIN PLLOUTGLOBAL (1247.24:1309.74:1378.68) (1170.03:1228.66:1293.33))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_FEEDBACK_PATH_EXTERNAL")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCORE (-225.692:-237:-249.475) (-172.238:-180.869:-190.389))
+            (IOPATH PLLIN PLLOUTGLOBAL (-534.533:-561.317:-590.862) (-481.079:-505.185:-531.776))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_FEEDBACK_PATH_PHASE_AND_DELAY")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCORE (516.715:542.606:571.167) (540.472:567.553:597.427))
+            (IOPATH PLLIN PLLOUTGLOBAL (855.252:898.106:945.379) (754.285:792.08:833.772))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PLL40_FEEDBACK_PATH_SIMPLE")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PLLIN PLLOUTCORE (1366.03:1434.48:1509.98) (1371.97:1440.71:1516.55))
+            (IOPATH PLLIN PLLOUTGLOBAL (1698.63:1783.74:1877.63) (1585.78:1665.24:1752.89))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_000000")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_000010")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_000011")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_000100")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_000101")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_000110")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_000111")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_001000")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_001001")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_001010")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_001011")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_001100")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_001101")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_001110")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_001111")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_010000")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_010001")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_010010")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_010011")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_010100")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_010101")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_010110")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_010111")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_011000")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_011010")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_011011")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_011100")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_011101")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_011110")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_011111")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_100000")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_100001")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_100010")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_100011")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_100100")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_100101")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_100110")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_100111")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_101000")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_101001")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_101010")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_101011")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_101100")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_101101")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_101110")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_101111")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH OUTPUTENABLE PADOEN (148.481:155.921:164.128) (178.178:187.106:196.954))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_110000")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_110001")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_110010")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_110011")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (negedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT1) (negedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT1) (negedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT1) (negedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_110100")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_110101")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_110110")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_110111")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_111000")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_111001")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_111010")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_111011")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH DOUT0 PADOUT (1698.63:1783.74:1877.63) (1894.62:1989.56:2094.28))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_111100")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_111101")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_111110")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge INPUTCLK) DIN0 (118.785:124.737:131.303) (118.785:124.737:131.303))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (posedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (posedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "PRE_IO_PIN_TYPE_111111")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH (posedge OUTPUTCLK) PADOUT (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH (posedge OUTPUTCLK) PADOEN (95.028:99.7896:105.042) (118.785:124.737:131.303))
+            (IOPATH PADIN DIN0 (522.654:548.843:577.732) (391.991:411.632:433.299))
+            (IOPATH LATCHINPUTVALUE DIN0 (291.023:305.606:321.691) (314.78:330.553:347.952))
+            (IOPATH (negedge INPUTCLK) DIN1 (118.785:124.737:131.303) (118.785:124.737:131.303))
+         )
+      )
+      (TIMINGCHECK
+         (SETUP (posedge CLOCKENABLE) (posedge INPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge INPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge INPUTCLK) (0:0:0))
+         (SETUP (posedge CLOCKENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge CLOCKENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge CLOCKENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge DOUT0) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge DOUT0) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge DOUT0) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (65.3318:68.6054:72.2165))
+         (SETUP (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (59.3925:62.3685:65.6513))
+         (HOLD (posedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (HOLD (negedge OUTPUTENABLE) (posedge OUTPUTCLK) (0:0:0))
+         (SETUP (posedge PADIN) (negedge INPUTCLK) (1602.53:1682.83:1771.4))
+         (SETUP (negedge PADIN) (negedge INPUTCLK) (1596.59:1676.59:1764.84))
+         (HOLD (posedge PADIN) (negedge INPUTCLK) (0:0:0))
+         (HOLD (negedge PADIN) (negedge INPUTCLK) (0:0:0))
+      )
+   )
+   (CELL
+      (CELLTYPE "Sp12to4")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (362.294:380.448:400.473) (380.112:399.158:420.168))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (415.748:436.58:459.559) (457.322:480.237:505.515))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (415.748:436.58:459.559) (457.322:480.237:505.515))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s0_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (118.785:124.737:131.303) (124.724:130.974:137.868))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s0_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (83.1495:87.3159:91.9119) (89.0888:93.5528:98.477))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s10_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (362.294:380.448:400.473) (397.93:417.869:439.864))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s10_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (332.598:349.264:367.647) (368.234:386.685:407.038))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s11_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (397.93:417.869:439.864) (445.444:467.764:492.385))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s11_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (350.416:367.974:387.343) (386.051:405.395:426.734))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s1_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (112.846:118.5:124.738) (112.846:118.5:124.738))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s1_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (89.0888:93.5528:98.477) (89.0888:93.5528:98.477))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s2_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (136.603:143.448:150.998) (142.542:149.684:157.563))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s2_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (118.785:124.737:131.303) (130.664:137.211:144.433))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s3_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (142.542:149.684:157.563) (154.421:162.158:170.693))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s3_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (124.724:130.974:137.868) (142.542:149.684:157.563))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s4_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (166.299:174.632:183.824) (184.117:193.342:203.519))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s5_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (195.995:205.816:216.649) (219.752:230.763:242.91))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s5_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (201.935:212.053:223.215) (225.692:237:249.475))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s6_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (213.813:224.527:236.345) (237.57:249.474:262.605))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s6_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (219.752:230.763:242.91) (243.509:255.711:269.17))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s7_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (243.509:255.711:269.17) (273.206:286.895:301.996))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s7_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (237.57:249.474:262.605) (267.266:280.658:295.431))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s8_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (291.023:305.606:321.691) (326.659:343.027:361.082))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s8_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (302.902:318.079:334.822) (332.598:349.264:367.647))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s9_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (332.598:349.264:367.647) (368.234:386.685:407.038))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_s9_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (320.72:336.79:354.517) (356.355:374.211:393.908))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span12Mux_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (415.748:436.58:459.559) (457.322:480.237:505.515))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (296.963:311.843:328.257) (314.78:330.553:347.952))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_s0_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (124.724:130.974:137.868) (118.785:124.737:131.303))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_s1_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (148.481:155.921:164.128) (142.542:149.684:157.563))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_s2_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (172.238:180.869:190.389) (172.238:180.869:190.389))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_s3_h")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (195.995:205.816:216.649) (195.995:205.816:216.649))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "Span4Mux_s3_v")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH I O (267.266:280.658:295.431) (285.084:299.369:315.126))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "TRIBUF")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH E PAD (0:0:0) (0:0:0))
+            (IOPATH E PAD (0:0:0) (0:0:0))
+            (IOPATH D PAD (0:0:0) (0:0:0))
+         )
+      )
+   )
+   (CELL
+      (CELLTYPE "sync_clk_enable")
+      (INSTANCE *)
+      (DELAY
+         (ABSOLUTE 
+            (IOPATH D Q (0:0:0) (0:0:0))
+            (IOPATH NC Q (0:0:0) (0:0:0))
+         )
+      )
+   )
+)
+                    

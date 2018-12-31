@@ -1,0 +1,12 @@
+ble_pack r_counter[0]_LC_2 {r_counter[0], r_counter_cry_c[0], r_counter_RNO[0]}
+ble_pack r_counter[1]_LC_3 {r_counter[1], r_counter_cry_c[1], r_counter_RNO[1]}
+ble_pack r_counter[2]_LC_4 {r_counter[2], r_counter_cry_c[2], r_counter_RNO[2]}
+ble_pack r_counter[3]_LC_5 {r_counter[3], r_counter_cry_c[3], r_counter_RNO[3]}
+ble_pack r_counter[4]_LC_6 {r_counter[4], r_counter_cry_c[4], r_counter_RNO[4]}
+ble_pack r_counter[5]_LC_7 {r_counter[5], r_counter_cry_c[5], r_counter_RNO[5]}
+ble_pack r_counter[6]_LC_8 {r_counter[6], r_counter_RNO[6]}
+clb_pack PLB_0 {r_counter[0]_LC_2, r_counter[1]_LC_3, r_counter[2]_LC_4, r_counter[3]_LC_5, r_counter[4]_LC_6, r_counter[5]_LC_7, r_counter[6]_LC_8}
+ble_pack r_over_run_LC_9 {r_over_run, r_over_run_RNO}
+ble_pack r_counter_RNIJEU3[6]_LC_1 {r_counter_RNIJEU3[6]}
+ble_pack r_counter_RNI44T6[0]_LC_0 {r_counter_RNI44T6[0]}
+clb_pack PLB_1 {r_over_run_LC_9, r_counter_RNIJEU3[6]_LC_1, r_counter_RNI44T6[0]_LC_0}

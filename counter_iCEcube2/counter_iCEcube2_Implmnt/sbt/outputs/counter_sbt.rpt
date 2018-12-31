@@ -1,0 +1,102 @@
+* ******************************************************************************
+
+* iCEcube Report
+
+* Version:            2017.08.27940
+
+* Build Date:         Sep 11 2017 16:52:36
+
+* File Generated:     Dec 30 2018 20:03:31
+
+* Purpose:            General info of design implementation
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Synthesis/Placement Summary:
+----------------------------
+    Status:  Successful
+    Runtime: 0 seconds
+
+Device Info:
+------------
+    Device Family: iCE40
+    Device:        iCE40HX8K
+    Package:       CT256
+
+Design statistics:
+------------------
+    FFs:                  8
+    LUTs:                 10
+    RAMs:                 0
+    IOBs:                 10
+    GBs:                  1
+    PLLs:                 0
+    Warm Boots:           0
+
+Logic Resource Utilization:
+---------------------------
+    Total Logic Cells: 10/7680
+        Combinational Logic Cells: 2        out of   7680      0.0260417%
+        Sequential Logic Cells:    8        out of   7680      0.104167%
+        Logic Tiles:               3        out of   960       0.3125%
+    Registers: 
+        Logic Registers:           8        out of   7680      0.104167%
+        IO Registers:              0        out of   1280      0
+    Block RAMs:                    0        out of   32        0%
+    Warm Boots:                    0        out of   1         0%
+    Pins:
+        Input Pins:                2        out of   206       0.970874%
+        Output Pins:               8        out of   206       3.8835%
+        InOut Pins:                0        out of   206       0%
+    Global Buffers:                1        out of   8         12.5%
+    PLLs:                          0        out of   2         0%
+
+IO Bank Utilization:
+--------------------
+    Bank 3: 2        out of   52        3.84615%
+    Bank 1: 0        out of   52        0%
+    Bank 0: 8        out of   52        15.3846%
+    Bank 2: 0        out of   50        0%
+
+Detailed I/O Info:
+------------------
+    Input Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name   
+    ----------  ---------  -----------  -------  -------  -----------    -----------   
+    B1          Input      SB_LVCMOS    No       3        Simple Input   i_RST         
+    J3          Input      SB_LVCMOS    No       3        Simple Input   i_CLK         
+
+    Output Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name   
+    ----------  ---------  -----------  -------  -------  -----------    -----------   
+    A1          Output     SB_LVCMOS    No       0        Simple Output  i_COUNTER[3]  
+    A2          Output     SB_LVCMOS    No       0        Simple Output  i_COUNTER[2]  
+    B3          Output     SB_LVCMOS    No       0        Simple Output  i_COUNTER[6]  
+    B4          Output     SB_LVCMOS    No       0        Simple Output  i_COUNTER[1]  
+    B5          Output     SB_LVCMOS    No       0        Simple Output  i_COUNTER[0]  
+    C3          Output     SB_LVCMOS    No       0        Simple Output  i_OVER_RUN    
+    C4          Output     SB_LVCMOS    No       0        Simple Output  i_COUNTER[5]  
+    C5          Output     SB_LVCMOS    No       0        Simple Output  i_COUNTER[4]  
+
+Detailed Global Buffer Info:
+----------------------------
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name
+    -------------  -------  ---------  ------  -----------
+    1              3        IO         8       i_CLK_c_g  
+
+
+Router Summary:
+---------------
+    Status:  Successful
+    Runtime: 19 seconds
+
+Routing Resource Utilization:
+-----------------------------
+              Local line of tile       90 out of 146184      0.0615662%
+                          Span 4       21 out of  29696      0.0707166%
+                         Span 12        3 out of   5632      0.053267%
+                  Global network        1 out of      8      12.5%
+      Vertical Inter-LUT Connect        1 out of   6720      0.014881%
+

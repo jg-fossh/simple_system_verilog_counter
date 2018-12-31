@@ -1,0 +1,11 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MT206 |Auto Constrain mode is enabled
+@N: MO231 :"z:\home\jota\documents\rtl\counter\counter_icecube2\counter.sv":48:2:48:10|Found counter in view:work.counter(verilog) instance r_counter[6:0] 
+@N: MF322 |Retiming summary: 0 registers retimed to 0 
+@N: FX1016 :"z:\home\jota\documents\rtl\counter\counter_icecube2\counter.sv":36:32:36:36|SB_GB_IO inserted on the port i_CLK.
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: FX1056 |Writing EDF file: Z:\home\jota\Documents\RTL\Counter\counter_iCEcube2\counter_iCEcube2\counter_iCEcube2_Implmnt\counter_iCEcube2.edf
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

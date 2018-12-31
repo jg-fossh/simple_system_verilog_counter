@@ -1,0 +1,12 @@
+@P:  Worst Slack : -0.883
+@P:  counter|i_CLK - Estimated Frequency : 169.9 MHz
+@P:  counter|i_CLK - Requested Frequency : 199.9 MHz
+@P:  counter|i_CLK - Estimated Period : 5.887
+@P:  counter|i_CLK - Requested Period : 5.003
+@P:  counter|i_CLK - Slack : -0.883
+@P: counter Part : ice40hx8kct256
+@P: counter I/O primitives : 10
+@P: counter I/O Register bits : 0
+@P: counter Register bits (Non I/O) : 8 (0%)
+@P: counter Total Luts : 10 (0%)
+@P:  CPU Time : 0h:00m:01s

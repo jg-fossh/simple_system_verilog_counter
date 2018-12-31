@@ -1,0 +1,15 @@
+#OPTIONS:"|-layerid|0|-orig_srs|Z:\\home\\jota\\Documents\\RTL\\Counter\\counter_iCEcube2\\counter_iCEcube2\\counter_iCEcube2_Implmnt\\synwork\\counter_iCEcube2_comp.srs|-top|counter|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-I|Z:\\home\\jota\\Documents\\RTL\\Counter\\counter_iCEcube2\\counter_iCEcube2\\|-I|C:\\lscc\\iCEcube2.2017.08\\synpbase\\lib|-sysv|-devicelib|C:\\lscc\\iCEcube2.2017.08\\synpbase\\lib\\generic\\sb_ice40.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|50000|-autosm|-beta_vfeatures|-lib|work|-fsysv"
+#CUR:"C:\\lscc\\iCEcube2.2017.08\\synpbase\\bin64\\c_ver.exe":1544821670
+#CUR:"C:\\lscc\\iCEcube2.2017.08\\synpbase\\lib\\generic\\sb_ice40.v":1544821674
+#CUR:"C:\\lscc\\iCEcube2.2017.08\\synpbase\\lib\\vlog\\hypermods.v":1544821675
+#CUR:"C:\\lscc\\iCEcube2.2017.08\\synpbase\\lib\\vlog\\umr_capim.v":1544821675
+#CUR:"C:\\lscc\\iCEcube2.2017.08\\synpbase\\lib\\vlog\\scemi_objects.v":1544821675
+#CUR:"C:\\lscc\\iCEcube2.2017.08\\synpbase\\lib\\vlog\\scemi_pipes.svh":1544821675
+#CUR:"Z:\\home\\jota\\Documents\\RTL\\Counter\\counter_iCEcube2\\counter.sv":1546217454
+0			"Z:\home\jota\Documents\RTL\Counter\counter_iCEcube2\counter.sv" verilog
+#Dependency Lists(Uses List)
+0 -1
+#Dependency Lists(Users Of)
+0 -1
+#Design Unit to File Association
+module work counter 0

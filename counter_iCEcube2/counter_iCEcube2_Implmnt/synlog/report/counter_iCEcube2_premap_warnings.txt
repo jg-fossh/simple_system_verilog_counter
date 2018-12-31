@@ -1,0 +1,1 @@
+@W: MT529 :"z:\home\jota\documents\rtl\counter\counter_icecube2\counter.sv":48:2:48:10|Found inferred clock counter|i_CLK which controls 8 sequential elements including r_counter[6:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
